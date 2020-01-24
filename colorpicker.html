@@ -1,0 +1,35 @@
+<template>
+
+    <lightning-card>
+
+        <div class="slds-p-left_medium slds-p-right_medium">
+
+            <label>Enter a name below </label>
+            <lightning-input value={name} onchange={handleChange}> </lightning-input>
+
+            <br />
+
+            <label>Pick a color </label> <br />
+        
+            <!-- <p>
+                The color is {color}.
+            </p> -->
+
+            <select name={color} onchange={handleColorChange}>
+                <option> --Choose a Color-- </option>
+                <option value="Red"> Red </option>
+                <option value="Blue"> Blue </option>
+                <option value="Green"> Green </option>
+            </select>
+
+            <br /><br />
+
+            <p style={backcolor}>
+                Hi, my name is {name}.
+            </p>
+            
+        </div>
+    </lightning-card>
+
+
+</template>
